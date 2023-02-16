@@ -26,7 +26,7 @@ public class MyArrayListTest {
     }
 
     @Test(groups = "myArrayListTests")
-    public void testAddElement() {
+    public void testMyArrayListAddElement() {
         testingArray.add(5);
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(testingArray.size(), 1);
@@ -35,21 +35,21 @@ public class MyArrayListTest {
     }
 
     @Test(groups = "myArrayListTests")
-    public void testDeleteElement() {
+    public void testMyArrayListDeleteElement() {
         testingArray.add(5);
         testingArray.remove(0);
         Assert.assertTrue(testingArray.isEmpty());
     }
 
     @Test(groups = "myArrayListTests")
-    public void testGetElement() {
+    public void testMyArrayListGetElement() {
         testingArray.add(10);
         testingArray.add(4);
         assertEquals(testingArray.get(1).intValue(), 4);
     }
 
     @Test(groups = "myArrayListTests")
-    public void testSetElement() {
+    public void testMyArrayListSetElement() {
         testingArray.add(5);
         testingArray.set(0, 6);
         assertEquals(testingArray.get(0).intValue(), 6);
@@ -90,7 +90,7 @@ public class MyArrayListTest {
     }
 
     @Test(groups = "myArrayListTests")
-    public void testRemoveElement() {
+    public void testMyArrayListRemoveElement() {
         ArrayList<String> firstArrayList = new ArrayList<>();
         firstArrayList.add("test");
         firstArrayList.add("secondTest");
@@ -103,7 +103,7 @@ public class MyArrayListTest {
     }
 
     @Test(groups = "myArrayListTests")
-    public void testRemoveElementByIndex() {
+    public void testMyArrayListRemoveElementByIndex() {
         ArrayList<String> firstArrayList = new ArrayList<>();
         firstArrayList.add("test");
         firstArrayList.add("secondTest");
@@ -116,7 +116,7 @@ public class MyArrayListTest {
     }
 
     @Test(groups = "myArrayListTests")
-    public void testContains() {
+    public void testMyArrayListContains() {
         testingArray.add(1);
         testingArray.add(2);
         testingArray.add(3);

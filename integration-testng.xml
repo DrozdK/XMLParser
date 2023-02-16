@@ -4,13 +4,16 @@
     <test name="test for parser" >
         <groups>
             <run>
-                <include name="validationTests"/>
-                <include name="simpleTests"/>
+                <include name="parserValidationTests"/>
+                <include name="functionalParserTests"/>
+                <include name="XMLTagTests"/>
+                <include name="testsWithBugs"/>
             </run>
         </groups>
         <classes>
             <class name="parser.ParserTests"/>
             <class name="parser.FoundBugsInTests"/>
+            <class name="parser.XMLTagTests"/>
         </classes>
     </test>
 </suite>
