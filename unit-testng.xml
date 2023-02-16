@@ -11,6 +11,11 @@
             <class name="collections.MyStackTest"/>
         </classes>
     </test>
+    <test name="test for DLL">
+        <classes>
+            <class name="collections.MyDLLTests"/>
+        </classes>
+    </test>
     <test name="test for exceptions" >
         <classes>
             <class name="collections.ExpectedExceptionTests" />

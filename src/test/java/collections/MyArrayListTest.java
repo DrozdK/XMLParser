@@ -25,7 +25,7 @@ public class MyArrayListTest {
         assertEquals(testingArray.size(), 0);
     }
 
-    @Test(groups = "additionTests")
+    @Test(groups = "myArrayListTests")
     public void testAddElement() {
         testingArray.add(5);
         SoftAssert softAssert = new SoftAssert();
@@ -34,28 +34,28 @@ public class MyArrayListTest {
         softAssert.assertAll();
     }
 
-    @Test(dependsOnMethods = "testAddElement")
+    @Test(groups = "myArrayListTests")
     public void testDeleteElement() {
         testingArray.add(5);
         testingArray.remove(0);
         Assert.assertTrue(testingArray.isEmpty());
     }
 
-    @Test(dependsOnMethods = "testAddElement")
+    @Test(groups = "myArrayListTests")
     public void testGetElement() {
         testingArray.add(10);
         testingArray.add(4);
         assertEquals(testingArray.get(1).intValue(), 4);
     }
 
-    @Test(dependsOnMethods = "testAddElement")
+    @Test(groups = "myArrayListTests")
     public void testSetElement() {
         testingArray.add(5);
         testingArray.set(0, 6);
         assertEquals(testingArray.get(0).intValue(), 6);
     }
 
-    @Test
+    @Test(groups = "myArrayListTests")
     public void testMyArrayListAddToIndexAndGetThisElement() {
         SoftAssert softly = new SoftAssert();
         ArrayList<String> arrayList = new ArrayList<>();
@@ -68,7 +68,7 @@ public class MyArrayListTest {
         softly.assertAll();
     }
 
-    @Test
+    @Test(groups = "myArrayListTests")
     public void testMyArrayListAddToIndex() {
         testingArray.add(1);
         testingArray.add(2);
@@ -76,7 +76,7 @@ public class MyArrayListTest {
         assertEquals(testingArray.toArray().length,3);
     }
 
-    @Test
+    @Test(groups = "myArrayListTests")
     public void testMyArrayListAddAll() {
         ArrayList<String> firstArrayList = new ArrayList<>();
         firstArrayList.add("test");
@@ -89,7 +89,7 @@ public class MyArrayListTest {
         assertEquals(secondArrayList.toArray(), thirdArrayList.toArray());
     }
 
-    @Test
+    @Test(groups = "myArrayListTests")
     public void testRemoveElement() {
         ArrayList<String> firstArrayList = new ArrayList<>();
         firstArrayList.add("test");
@@ -102,7 +102,7 @@ public class MyArrayListTest {
         assertEquals(firstArrayList.toArray(), secondArrayList.toArray());
     }
 
-    @Test
+    @Test(groups = "myArrayListTests")
     public void testRemoveElementByIndex() {
         ArrayList<String> firstArrayList = new ArrayList<>();
         firstArrayList.add("test");
@@ -115,7 +115,7 @@ public class MyArrayListTest {
         assertEquals(secondArrayList.toArray().length, firstArrayList.toArray().length);
     }
 
-    @Test
+    @Test(groups = "myArrayListTests")
     public void testContains() {
         testingArray.add(1);
         testingArray.add(2);
