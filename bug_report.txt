@@ -1,0 +1,24 @@
+1. Parser doesn't support comments in xml file.
+*Priority - medium.
+**Step to reproduce - 
+1) run test getValidXMLWithCommentTest.
+***expected result - parser does support comments in xml file;
+***actual result - parser doesn't support comments in xml file.
+
+
+2. Parser considers a file with an empty declaration valid. (!fixed!)
+*Priority - high.
+**Step to reproduce - 
+1) create xml file with empty declaration (<>); 
+2) run ProgramRunner with created file.
+***expected result - parser return error;
+***actual result - parser return text "Valid XML".
+
+
+3. Parser doesn't support self-closing tags. (!fixed!)
+*Priority - high.
+**Step to reproduce - 
+1) create xml file with self-closing tag (<example\>);
+2) run ProgramRunner with created file.
+***expected result - parser return text "Valid XML";
+***actual result - parser return error.
