@@ -12,7 +12,7 @@
         </groups>
         <classes>
             <class name="parser.ParserTests"/>
-            <class name="parser.FoundBugsInTests"/>
+            <class name="parser.FoundBugInTest"/>
             <class name="parser.XMLTagTests"/>
         </classes>
     </test>

@@ -1,0 +1,16 @@
+1. Check that parser finds files to check;
+2. Check that the parser considers the xml document from the declaration valid;
+3. Check that the parser considers the xml document valid without a declaration;
+4. Check that the parser considers a xml document with a closed root tag valid;
+5. Check that the parser doesn't validate xml document with an unclosed root tag;
+6. Check that the self-closing tag is considered valid by the parser;
+7. Check that the comments in the xml document do not affect the parser check (the parser skips comments);
+8. Check that the parser doesn't check the dtd in the xml document (if there are errors in the dtd, the parser will consider the document valid);
+9. Check that the parser doesn't check schemas in the xml document (if there are errors in the schema, the parser will consider the document valid);
+10. Check that the parser does not check namespaces in the xml document (if there are errors in the namespaces, the parser will consider the document valid);
+11. Check that if there is an unclosed root tag in the xml document, an error will appear in the console as required;
+12. Check that if there is an unclosed tag in the xml document, an error will appear in the console as required;
+13. Check that if there is a closed tag in the xml document, but no open tag, the console will display an error as required;
+14. Check that if there is a root tag without <> in the xml document, the console will display an error as required;
+15. Check that if the xml document contains a tag without <>, the console will display an error as required;
+16. Check that if there is an opening tag without > in the xml document, the console will display an error as required.
