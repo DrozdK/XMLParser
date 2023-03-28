@@ -1,6 +1,6 @@
 package Helpers;
 
-public enum TextHelpers {
+public enum TextHelper {
     VALID_TEXT("Valid XML"),
     UNEXPECTED_TAG_TEXT("Unexpected closing tag contact"),
     START_WITH_ROOT_TAG_TEXT("Document should start from root tag or instruction. "),
@@ -11,7 +11,7 @@ public enum TextHelpers {
 
     private String textHelper;
 
-    TextHelpers (String textHelper) {
+    TextHelper(String textHelper) {
         this.textHelper = textHelper;
     }
 
